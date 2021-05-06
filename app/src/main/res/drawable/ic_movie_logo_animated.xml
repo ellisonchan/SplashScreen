@@ -1,0 +1,31 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt" >
+  <aapt:attr name="android:drawable">
+    <vector
+        android:height="200dp"
+        android:width="200dp"
+        android:viewportHeight="1024"
+        android:viewportWidth="1024" >
+      <group
+          android:name="rotationGroup"
+          android:pivotX="0.5"
+          android:pivotY="0.5"
+          android:rotation="360" >
+        <path
+            android:name="v"
+            android:fillColor="#1296db"
+            android:pathData="M512 0C229.23 0 0 229.23 0 512s229.23 512 512 512 512-229.23 512-512S794.77 0 512 0z m0 113.618c60.374 0 109.316 48.942 109.316 109.318 0 60.374-48.944 109.316-109.316 109.316-60.376 0-109.316-48.942-109.316-109.316 0-60.376 48.94-109.318 109.316-109.318z m-396.444 301.11c0-60.374 48.942-109.316 109.318-109.316 60.374 0 109.316 48.942 109.316 109.316 0 60.376-48.942 109.318-109.316 109.318-60.374-0.002-109.318-48.944-109.318-109.318z m222.846 430.56c-60.374 0-109.316-48.942-109.316-109.316s48.944-109.318 109.316-109.318c60.374 0 109.318 48.944 109.318 109.318s-48.944 109.316-109.318 109.316zM512 576c-35.346 0-64-28.654-64-64s28.654-64 64-64c35.346 0 64 28.654 64 64s-28.654 64-64 64z m173.598 269.938c-60.376 0-109.316-48.942-109.316-109.316s48.942-109.318 109.316-109.318 109.316 48.944 109.316 109.318-48.944 109.316-109.316 109.316z m113.526-321.242c-60.374 0-109.316-48.942-109.316-109.318 0-60.374 48.944-109.316 109.316-109.316 60.376 0 109.318 48.942 109.318 109.316 0.002 60.374-48.94 109.318-109.318 109.318z" />
+      </group>
+    </vector>
+  </aapt:attr>
+
+  <target android:name="rotationGroup"> *
+    <aapt:attr name="android:animation">
+      <objectAnimator
+          android:duration="500"
+          android:propertyName="rotation"
+          android:valueFrom="0"
+          android:valueTo="360" />
+    </aapt:attr>
+  </target>
+</animated-vector>

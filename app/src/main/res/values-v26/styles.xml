@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+<!--        <item name="android:windowBackground">@null</item>-->
+<!--        <item name="android:windowDisablePreview">true</item>-->
+        <item name="android:windowBackground">@color/splashScreenColor</item>
+        <item name="android:windowSplashscreenContent">@color/splashScreenColor</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--        <item name="android:windowBackground">@null</item>-->
+        <!--        <item name="android:windowDisablePreview">true</item>-->
+<!--        <item name="android:windowBackground">@color/bgColor</item>-->
+<!--        <item name="android:windowSplashscreenContent">@color/splashColor</item>-->
+<!--        <item name="android:windowBackground">@drawable/ic_splash</item>-->
+<!--        <item name="android:windowBackground">@drawable/ic_splash_zhihu</item>-->
+        <item name="android:windowSplashscreenContent">@drawable/ic_splash_xiaomi</item>
+    </style>
+</resources>

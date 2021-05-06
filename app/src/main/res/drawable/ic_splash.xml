@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="@drawable/ic_splash_bg"/>
+    </item>
+
+<!--    <item>-->
+<!--        <bitmap android:shape="rectangle" >-->
+<!--            <gradient-->
+<!--                android:angle="270"-->
+<!--                android:endColor="@color/bgColor"-->
+<!--                android:startColor="@color/bgColor" />-->
+<!--        </bitmap>-->
+<!--    </item>-->
+    <item
+        android:gravity="center">
+        <bitmap android:alpha="0.7"
+            android:src="@drawable/ic_launcher_round_for_splash"/>
+    </item>
+</layer-list>

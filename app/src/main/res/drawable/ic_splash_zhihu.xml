@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="1080dp"
+        android:height="1880dp"
+        >
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="@android:color/white"
+                android:endColor="@android:color/white"/>
+        </shape>
+    </item>
+
+    <item
+        android:gravity="center"
+        android:width="180dp"
+        android:height="180dp">
+        <bitmap
+            android:src="@drawable/ic_zhihu_logo"/>
+    </item>
+
+    <item
+        android:gravity="bottom|center_horizontal"
+        android:bottom="48dp"
+        android:width="220dp"
+        android:height="90dp">
+        <bitmap android:alpha="0.7"
+            android:src="@drawable/ic_zhihu_brand"/>
+    </item>
+</layer-list>

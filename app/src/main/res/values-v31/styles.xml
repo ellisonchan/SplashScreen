@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--        Static icon-->
+        <!--        <item name="android:windowSplashScreenAnimatedIcon">@drawable/xiaomi_logo_2021</item>-->
+        <!--        Animated icon-->
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_movie_logo_animated</item>
+
+        <!--        Animation duration-->
+        <item name="android:windowSplashScreenAnimationDuration">1000</item>
+
+        <!--        Mask color-->
+        <!--        <item name="android:windowSplashScreenIconBackgroundColor">@color/splashIconMaskColor</item>-->
+
+        <!--        Splash background colorAccent-->
+        <!--        <item name="android:windowSplashScreenBackground">@color/colorPrimary</item>-->
+        <item name="android:windowSplashScreenBackground">@color/splashScreenColor</item>
+
+        <!--        Brand image-->
+        <item name="android:windowSplashScreenBrandingImage">@drawable/xiaomi_brand</item>
+        <!--        <item name="android:windowSplashScreenBrandingImage">@drawable/xiaomi_brand_small</item>-->
+    </style>
+</resources>
