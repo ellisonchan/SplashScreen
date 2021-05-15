@@ -118,8 +118,8 @@ class SplashActivity : AppCompatActivity() {
 //            splashScreenView.remove()
 
             // Customize exit animator
-            showSplashExitAnimator(splashScreenView)
-//             showSplashIconExitAnimator(splashScreenView)
+//            showSplashExitAnimator(splashScreenView)
+             showSplashIconExitAnimator(splashScreenView)
         }
     }
 

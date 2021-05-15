@@ -1,8 +1,6 @@
 # Splash Screen Feature
 Splash screen demo that used with [Splash Screen](https://developer.android.google.cn/reference/android/window/SplashScreen) API on `Android 12`.
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210514235447782.jpg)
-
 ![](https://img-blog.csdnimg.cn/img_convert/06cb7a569e6968912d6a9a369bb486a7.png)
 
 ## :camera_flash:Screenshot
