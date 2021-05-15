@@ -1,0 +1,37 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:aapt="http://schemas.android.com/aapt">
+<aapt:attr name="android:drawable">
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="716.8dp"
+    android:height="716.8dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+    <group
+        android:name="rotationGroup"
+        android:pivotX="512"
+        android:pivotY="512"
+        android:rotation="0">
+      <path
+          android:pathData="M521.5,212.19c-165.3,0 -299.32,134 -299.32,299.32s134.02,299.32 299.32,299.32s299.32,-134 299.32,-299.32s-134.02,-299.32 -299.32,-299.32zM356.9,583.04a72.23,72.23 135,1 1,0.62 -144.44a72.23,72.23 135,0 1,-0.62 144.44zM520.51,748.01a72.18,72.18 0,0 1,-71.9 -72.49c0.17,-39.87 32.63,-72.09 72.5,-71.93s72.06,32.66 71.91,72.53a72.21,72.21 0,0 1,-72.52 71.88zM489.93,511.51a31.57,31.57 0,1 1,63.14 0a31.57,31.57 0,0 1,-63.14 0zM521.88,419.43a72.2,72.2 0,1 1,0.59 -144.43a72.2,72.2 0,0 1,-0.59 144.43zM685.48,584.42a72.23,72.23 0,1 1,0.65 -144.44a72.23,72.23 0,0 1,-0.65 144.44z"
+          android:strokeLineJoin="miter"
+          android:strokeWidth="5"
+          android:fillColor="@color/iconFillColor"
+          android:fillType="nonZero"
+          android:strokeColor="@color/iconStrokeColor"
+          android:strokeLineCap="butt"/>
+    </group>
+  </vector>
+
+</aapt:attr>
+
+<target android:name="rotationGroup">*
+  <aapt:attr name="android:animation">
+    <objectAnimator
+        android:duration="500"
+        android:propertyName="rotation"
+        android:valueFrom="0"
+        android:valueTo="360" />
+  </aapt:attr>
+</target>
+</animated-vector>

@@ -1,0 +1,241 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <aapt:attr name="android:drawable">
+        <vector xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:aapt="http://schemas.android.com/aapt"
+            android:width="640dp"
+            android:height="640dp"
+            android:viewportWidth="640"
+            android:viewportHeight="640">
+
+            <group
+                android:name="centerGroup"
+                android:pivotX="320"
+                android:pivotY="320">
+
+                <path
+                    android:fillType="nonZero"
+                    android:pathData="M322.565,171.76l-145.45,152.975l0,136.725l145.225,-145.5l144.475,-144.2z"
+                    android:strokeWidth="1"
+                    android:strokeColor="@color/iconStrokeColor"
+                    android:strokeLineCap="butt"
+                    android:strokeLineJoin="miter">
+                    <aapt:attr name="android:fillColor">
+                        <gradient
+                            android:endX="376.56033"
+                            android:endY="189.88942"
+                            android:startX="144.278"
+                            android:startY="422.17175"
+                            android:type="linear">
+                            <item
+                                android:color="#FFC757BC"
+                                android:offset="0.1075" />
+                            <item
+                                android:color="#FFD0609A"
+                                android:offset="0.2138" />
+                            <item
+                                android:color="#FFE1725C"
+                                android:offset="0.42540002" />
+                            <item
+                                android:color="#FFEE7E2F"
+                                android:offset="0.6048" />
+                            <item
+                                android:color="#FFF58613"
+                                android:offset="0.74300003" />
+                            <item
+                                android:color="#FFF88909"
+                                android:offset="0.8232" />
+                        </gradient>
+                    </aapt:attr>
+                </path>
+            </group>
+
+            <group
+                android:name="bottomGroup"
+                android:pivotX="320"
+                android:pivotY="320">
+                <path
+                    android:fillAlpha="1"
+                    android:fillType="nonZero"
+                    android:pathData="M177.115,461.46l145.225,-145.5l144.475,145.5z"
+                    android:strokeWidth="1"
+                    android:strokeColor="@color/iconStrokeColor"
+                    android:strokeLineCap="butt"
+                    android:strokeLineJoin="miter">
+                    <aapt:attr name="android:fillColor">
+                        <gradient
+                            android:endX="401.65176"
+                            android:endY="381.63876"
+                            android:startX="279.2872"
+                            android:startY="504.0033"
+                            android:type="linear">
+                            <item
+                                android:color="#FF0095D5"
+                                android:offset="0.09677" />
+                            <item
+                                android:color="#FF238AD9"
+                                android:offset="0.3007" />
+                            <item
+                                android:color="#FF557BDE"
+                                android:offset="0.6211" />
+                            <item
+                                android:color="#FF7472E2"
+                                android:offset="0.8643" />
+                            <item
+                                android:color="#FF806EE3"
+                                android:offset="1" />
+                        </gradient>
+                    </aapt:attr>
+                </path>
+            </group>
+
+            <group
+                android:name="topGroup"
+                android:pivotX="320"
+                android:pivotY="320">
+                <path
+                    android:fillType="nonZero"
+                    android:pathData="M177.115,171.76l145.45,0l-145.45,152.975z"
+                    android:strokeWidth="1"
+                    android:strokeColor="@color/iconStrokeColor"
+                    android:strokeLineCap="butt"
+                    android:strokeLineJoin="miter">
+                    <aapt:attr name="android:fillColor">
+                        <gradient
+                            android:endX="270.78058"
+                            android:endY="154.57826"
+                            android:startX="163.82558"
+                            android:startY="261.53333"
+                            android:type="linear">
+                            <item
+                                android:color="#FF0095D5"
+                                android:offset="0.09677" />
+                            <item
+                                android:color="#FF238AD9"
+                                android:offset="0.3007" />
+                            <item
+                                android:color="#FF557BDE"
+                                android:offset="0.6211" />
+                            <item
+                                android:color="#FF7472E2"
+                                android:offset="0.8643" />
+                            <item
+                                android:color="#FF806EE3"
+                                android:offset="1" />
+                        </gradient>
+                    </aapt:attr>
+                </path>
+            </group>
+
+            <group
+                android:name="androidGroup"
+                android:pivotX="320"
+                android:pivotY="320">
+                <path
+                    android:fillColor="@color/iconFillColor"
+                    android:fillType="nonZero"
+                    android:pathData="M430.415,395.435c-2.35,-2.35 -2.325,-6.175 0.025,-8.525s6.175,-2.325 8.5,0.025c2.35,2.35 2.325,6.175 -0.025,8.5C436.59,397.81 432.765,397.785 430.415,395.435M383.515,348.26c-2.35,-2.35 -2.325,-6.175 0.025,-8.525c2.35,-2.35 6.175,-2.325 8.5,0.025c2.35,2.35 2.325,6.175 -0.025,8.5S385.84,350.61 383.515,348.26M457.665,371.41l23.25,-6.15c1.325,-0.35 2.125,-1.725 1.775,-3.05c-0.35,-1.325 -1.725,-2.125 -3.05,-1.775l-23.55,6.25c-3.55,-9.6 -9.25,-18.7 -17.125,-26.6c-7.875,-7.925 -16.925,-13.675 -26.5,-17.275l6.375,-23.525c0.35,-1.325 -0.425,-2.7 -1.75,-3.075c-1.325,-0.35 -2.7,0.425 -3.075,1.75l-6.3,23.225c-22.525,-6.725 -47.325,-2 -66.3,13.95l101.925,102.5C459.39,418.735 464.265,393.96 457.665,371.41"
+                    android:strokeWidth="1"
+                    android:strokeColor="@color/iconStrokeColor"
+                    android:strokeLineCap="butt"
+                    android:strokeLineJoin="miter" />
+            </group>
+        </vector>
+
+    </aapt:attr>
+
+
+    <!--            Drop down-->
+
+    <target android:name="topGroup">
+        <aapt:attr name="android:animation">
+            <!--            <set>-->
+            <!--                <objectAnimator-->
+            <!--                    android:duration="500"-->
+            <!--                    android:propertyName="translateX"-->
+            <!--                    android:valueFrom="-100"-->
+            <!--                    android:valueTo="0" />-->
+
+            <objectAnimator
+                android:duration="@integer/icon_animator_duration"
+                android:propertyName="translateY"
+                android:valueFrom="@integer/icon_animator_translate_minus"
+                android:valueTo="0" />
+            <!--            </set>-->
+        </aapt:attr>
+    </target>
+
+    <!--            Slide in-->
+    <target android:name="centerGroup">
+        <aapt:attr name="android:animation">
+            <set>
+                <objectAnimator
+                    android:duration="@integer/icon_animator_duration"
+                    android:propertyName="translateX"
+                    android:valueFrom="@integer/icon_animator_translate_above"
+                    android:valueTo="0" />
+                <objectAnimator
+                    android:duration="@integer/icon_animator_duration"
+                    android:propertyName="translateY"
+                    android:valueFrom="@integer/icon_animator_translate_minus"
+                    android:valueTo="0" />
+                <!--                <objectAnimator-->
+                <!--                    android:duration="500"-->
+                <!--                    android:propertyName="scaleX"-->
+                <!--                    android:valueFrom="0"-->
+                <!--                    android:valueTo="1" />-->
+
+                <!--                <objectAnimator-->
+                <!--                    android:duration="500"-->
+                <!--                    android:propertyName="scaleY"-->
+                <!--                    android:valueFrom="0"-->
+                <!--                    android:valueTo="1" />-->
+            </set>
+        </aapt:attr>
+    </target>
+
+    <!--            pop up-->
+    <target android:name="bottomGroup">
+        <aapt:attr name="android:animation">
+            <objectAnimator
+                android:duration="@integer/icon_animator_duration"
+                android:propertyName="translateY"
+                android:valueFrom="@integer/icon_animator_translate_above"
+                android:valueTo="0" />
+        </aapt:attr>
+    </target>
+
+    <target android:name="androidGroup">
+        <aapt:attr name="android:animation">
+            <!--            slide from right-->
+            <objectAnimator
+                android:duration="@integer/icon_animator_duration"
+                android:propertyName="translateX"
+                android:valueFrom="@integer/icon_animator_translate_above"
+                android:valueTo="0" />
+
+            <!--            slide from right and scale in -->
+            <!--            <set>-->
+            <!--                <objectAnimator-->
+            <!--                    android:duration="500"-->
+            <!--                    android:propertyName="translateX"-->
+            <!--                    android:valueFrom="200"-->
+            <!--                    android:valueTo="0" />-->
+
+            <!--                <objectAnimator-->
+            <!--                    android:duration="500"-->
+            <!--                    android:propertyName="scaleX"-->
+            <!--                    android:valueFrom="0"-->
+            <!--                    android:valueTo="1" />-->
+
+            <!--                <objectAnimator-->
+            <!--                    android:duration="500"-->
+            <!--                    android:propertyName="scaleY"-->
+            <!--                    android:valueFrom="0"-->
+            <!--                    android:valueTo="1" />-->
+            <!--            </set>-->
+
+        </aapt:attr>
+    </target>
+
+</animated-vector>

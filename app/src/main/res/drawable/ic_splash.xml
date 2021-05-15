@@ -14,7 +14,7 @@
 <!--    </item>-->
     <item
         android:gravity="center">
-        <bitmap android:alpha="0.7"
-            android:src="@drawable/ic_launcher_round_for_splash"/>
+        <bitmap android:alpha="1"
+            android:src="@drawable/ic_launcher_foreground"/>
     </item>
 </layer-list>

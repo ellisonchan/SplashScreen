@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainColor"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_icon_movie_adp_animated"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv" />
+<!--    android:src="@drawable/ic_icon_movie_mine_animated"-->
+<!--    android:src="@drawable/ic_icon_movie_mine"-->
+<!--    android:src="@drawable/ic_icon_movie_animated"-->
+<!--    android:src="@drawable/ic_launcher_animated_sample_2"-->
+<!--    android:src="@drawable/ic_launcher_animated_sample"-->
+<!--    android:src="@drawable/ic_launcher_foreground"-->
+<!--        android:src="@drawable/ic_launcher_foreground_animated"-->
+</androidx.constraintlayout.widget.ConstraintLayout>

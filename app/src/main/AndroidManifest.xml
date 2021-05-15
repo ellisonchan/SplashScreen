@@ -10,7 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.splash.MainActivity"/>
+<!--        android:theme="@style/SplashThemeWithTitle">-->
+        <activity android:name="com.example.splash.MainActivity"
+            android:theme="@style/AppThemeWithTitle"/>
         <activity android:name="com.example.splash.SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
@@ -19,6 +21,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+<!--        <activity android:name="com.example.splash.MainActivity"-->
+<!--            android:exported="true"-->
+<!--            android:theme="@style/SplashThemeWithTitle">-->
+<!--&lt;!&ndash;            android:theme="@style/SplashTheme">&ndash;&gt;-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
     </application>
 
 </manifest>
