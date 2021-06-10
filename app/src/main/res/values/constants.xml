@@ -1,5 +1,5 @@
 <resources>
-    <integer name="icon_animator_duration">900</integer>
+    <integer name="icon_animator_duration">1000</integer>
     <integer name="icon_animator_rotate_from">0</integer>
     <integer name="icon_animator_rotate_to">360</integer>
 

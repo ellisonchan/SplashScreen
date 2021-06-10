@@ -1,4 +1,4 @@
-package com.example.splash
+package com.example.splash.observer
 
 import android.app.Activity
 import android.os.Bundle

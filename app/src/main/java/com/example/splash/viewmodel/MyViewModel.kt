@@ -1,4 +1,4 @@
-package com.example.splash
+package com.example.splash.viewmodel
 
 import android.app.Application
 import android.os.SystemClock

@@ -1,14 +1,13 @@
-package com.example.splash
+package com.example.splash.activity
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.graphics.Path
-import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
-import android.os.SystemClock
+import android.graphics.RenderEffect
+import android.graphics.Shader
+import android.os.*
 import android.util.Log
 import android.view.View
 import android.view.ViewTreeObserver
@@ -17,8 +16,12 @@ import android.window.SplashScreenView
 import androidx.activity.viewModels
 import androidx.annotation.RequiresApi
 import androidx.core.animation.doOnEnd
+import androidx.core.os.BuildCompat
+import com.example.splash.R
 import com.example.splash.databinding.ActivitySplashBinding
-import java.lang.Thread.sleep
+import com.example.splash.observer.MyLifecycleObserver
+import com.example.splash.viewmodel.MyViewModel
+import java.lang.Exception
 import java.time.Instant
 
 class SplashActivity : AppCompatActivity() {
@@ -32,19 +35,15 @@ class SplashActivity : AppCompatActivity() {
 
     @RequiresApi(31)
     override fun onCreate(savedInstanceState: Bundle?) {
-        // Log.d("Splash", "SplashActivity#onCreate")
         super.onCreate(savedInstanceState)
 
-        // setContentView(R.layout.activity_splash)
         val binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         MyLifecycleObserver(lifecycle, this).also { lifecycle.addObserver(it) }
-        // goToMainScreenDelayed()
 
         // keepSplashScreenLonger()
-
-         customizeSplashScreenExit()
+        customizeSplashScreenExit()
     }
 
     // Ensure main screen not shown when tap home key during message queueing.
@@ -66,7 +65,8 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun goToMainScreenDelayed() {
-        handler.postDelayed(jumpRunnable, 3000)
+        // handler.postDelayed(jumpRunnable, 3000)
+        handler.postDelayed(jumpRunnable, 1500)
     }
 
     private fun goToMainScreen() {
@@ -77,6 +77,9 @@ class SplashActivity : AppCompatActivity() {
         finish()
     }
 
+    /*
+     Keep splash screen showing till data initialized.
+     */
     private fun keepSplashScreenLonger() {
         Log.d("Splash", "SplashActivity#keepSplashScreenLonger()")
         // 监听Content View的描画时机
@@ -99,8 +102,16 @@ class SplashActivity : AppCompatActivity() {
         )
     }
 
+    /*
+    Customize splash screen exit animator.
+     */
     @RequiresApi(31)
     private fun customizeSplashScreenExit() {
+        // Ensure working on S device or above .
+        if (!BuildCompat.isAtLeastS()) {
+            return
+        }
+
         splashScreen.setOnExitAnimationListener { splashScreenView ->
             Log.d(
                 "Splash", "SplashScreen#onSplashScreenExit view:$splashScreenView"
@@ -119,10 +130,13 @@ class SplashActivity : AppCompatActivity() {
 
             // Customize exit animator
 //            showSplashExitAnimator(splashScreenView)
-             showSplashIconExitAnimator(splashScreenView)
+            showSplashIconExitAnimator(splashScreenView)
         }
     }
 
+    /*
+    Show exit animator for splash screen view.
+     */
     @RequiresApi(31)
     private fun showSplashExitAnimator(splashScreenView: SplashScreenView) {
         // Single slide up animator.
@@ -200,6 +214,9 @@ class SplashActivity : AppCompatActivity() {
         animatorSet.start()
     }
 
+    /*
+    Show exit animator for splash icon.
+     */
     @RequiresApi(31)
     private fun showSplashIconExitAnimator(splashScreenView: SplashScreenView) {
         val iconView = splashScreenView.iconView ?: return
@@ -214,7 +231,8 @@ class SplashActivity : AppCompatActivity() {
         slideUp.interpolator = AnticipateInterpolator()
         slideUp.duration = resources.getInteger(R.integer.splash_exit_icon_duration).toLong()
         // slideUp.duration = getRemainingDuration(splashScreenView)
-//        Log.d("Splash", "SplashScreen#showSplashIconExitAnimator() duration:${slideUp.duration}")
+        // getRemainingDuration(splashScreenView)
+        Log.d("Splash", "SplashScreen#showSplashIconExitAnimator() duration:${slideUp.duration}")
 
         slideUp.doOnEnd {
             Log.d("Splash", "SplashScreen#showSplashIconExitAnimator() onEnd remove")
@@ -223,18 +241,23 @@ class SplashActivity : AppCompatActivity() {
         slideUp.start()
     }
 
+    /*
+    Calculate remaining duration for splash screen exit animator.
+     */
     @RequiresApi(31)
     private fun getRemainingDuration(splashScreenView: SplashScreenView): Long {
         // Get the duration of the animated vector drawable.
-        val animationDuration = splashScreenView.iconAnimationDurationMillis
+        // val animationDuration = splashScreenView.iconAnimationDurationMillis
+        val animationDuration = splashScreenView.iconAnimationDuration?.toMillis()
 
         // Get the start time of the animation.
-        val animationStart = splashScreenView.iconAnimationStartMillis
+        // val animationStart = splashScreenView.iconAnimationStartMillis
+        val animationStart = splashScreenView.iconAnimationStart?.toEpochMilli()
 
         Log.d(
             "Splash", "SplashScreen#getRemainingDuration() animationDuration:$animationDuration" +
                     " animationStart:$animationStart" +
-                    " animationStart:${Instant.ofEpochMilli(animationStart).toEpochMilli()}" +
+                    // " animationStart:${Instant.ofEpochMilli(animationStart).toEpochMilli()}" +
                     " current:${Instant.ofEpochMilli(System.currentTimeMillis()).toEpochMilli()}" +
                     " current:${Instant.now().toEpochMilli()}" +
                     " current:${SystemClock.uptimeMillis()}"

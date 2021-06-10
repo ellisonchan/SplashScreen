@@ -4,21 +4,27 @@ Splash screen demo that used with [Splash Screen](https://developer.android.goog
 ![](https://img-blog.csdnimg.cn/img_convert/06cb7a569e6968912d6a9a369bb486a7.png)
 
 ## :camera_flash:Screenshot
-### Default splash screen
+### Complete splash screen effect
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210514235608908.gif#pic_center)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fa147a6e37654221aad6b9c0e2dc6c15~tplv-k3u1fbpfcp-zoom-1.image#pic_center)
 
 ### Splash screen with animated icon
+#### android icon rotate animator
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ddd239d0b1c04df18facac58f140fef6~tplv-k3u1fbpfcp-zoom-1.image#pic_center)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210514235916608.gif#pic_center)
+#### android icon slide animator
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a334fb8b87104fde8b455d94087be1c0~tplv-k3u1fbpfcp-zoom-1.image#pic_center)
+
+#### kotlin and android icon compose animator
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b7598d3b251e4e1bae551f435cdec373~tplv-k3u1fbpfcp-zoom-1.image#pic_center)
 
 ### Splash screen exit animation by total view
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210515000406406.gif#pic_center)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/43a839b5840e4d23a553db2c40fdc01e~tplv-k3u1fbpfcp-zoom-1.image#pic_center)
 
 ### Splash screen exit animation by icon
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210514235535862.gif#pic_center)
+![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c17496c976754fd795c7015c265386e8~tplv-k3u1fbpfcp-zoom-1.image#pic_center)
 
 
 ## :orange_book:　Splash Screen API
@@ -49,6 +55,7 @@ Splash screen demo that used with [Splash Screen](https://developer.android.goog
 <https://blog.csdn.net/allisonchen>
 
 ## :copyright: License
+```
 MIT License
 
 Copyright (c) 2021 Ellison Chan
@@ -70,3 +77,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
