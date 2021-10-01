@@ -10,39 +10,36 @@ App demo that used with Jetpack [SplashScreen](https://developer.android.google.
 
 ### 1. Enter effect
 
-
-
-<center class="half">
+<div align=center>
     <img src="screenshots/jet-splash-enter-8.gif" width="30%"/>
     <img src="screenshots/jet-splash-enter-12.gif" width="30%"/>
-</center>
+</div>
 
 ### 2. Keep splash effect longer
 
 
-
-<center class="half">
+<div align=center>
     <img src="screenshots/jet-splash-longer-8.gif" width="30%"/>
     <img src="screenshots/jet-splash-longer-12.gif" width="30%"/>
-</center>
+</div>
 
 ### 3. Exit effect for icon
 
 
 
-<center class="half">
+<div align=center>
     <img src="screenshots/jet-splash-exit-icon-8.gif" width="30%"/>
     <img src="screenshots/jet-splash-exit-icon-12.gif" width="30%"/>
-</center>
+</div>
 
 ### 4. Exit effect for total view
 
 
 
-<center class="half">
+<div align=center>
     <img src="screenshots/jet-splash-exit-total-8.gif" width="30%"/>
     <img src="screenshots/jet-splash-exit-total-12.gif" width="30%"/>
-</center>
+</div>
 
 ## :orange_book:　Splash Screen API
 
