@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="iconFillColorNew">#3DDC84</color>
+
+    <color name="statusColor">#1a3747</color>
+    <!--    <color name="statusColor">#3850b2</color>-->
+    <!--    <color name="statusColor">#2e2f43</color>-->
+    <!--    <color name="statusColor">#39597f</color>-->
+    <!--    <color name="statusColor">#46485f</color>-->
+
+    <color name="navigationColor">@color/statusColor</color>
+
+    <color name="customizeBgColor">@color/statusColor</color>
+    <!--    <color name="customizeBgStartColor">#0f1b27</color>-->
+    <color name="customizeBgStartColor">@color/statusColor</color>
+
+    <color name="newMainColor">@color/statusColor</color>
+    <!--    <color name="newMainColor">#46485f</color>-->
+
+    <color name="iconBackgroundColor">#2e2f43</color>
+
+    <color name="mainScreenTextColor">@color/brandColorTint</color>
+
+    <color name="brandColorTint">#f6f5ec</color>
+
+    <!--    <color name="statusColor">#f6f5ec</color>-->
+
+    <!--    <color name="navigationColor">@color/statusColor</color>-->
+
+    <!--    <color name="customizeBgColor">@color/statusColor</color>-->
+
+    <!--    <color name="newMainColor">@color/statusColor</color>-->
+    <!--    &lt;!&ndash;    <color name="newMainColor">#46485f</color>&ndash;&gt;-->
+
+    <!--    <color name="mainScreenTextColor">@color/brandColorTint</color>-->
+
+    <!--    <color name="brandColorTint">#57595c</color>-->
+    <!--    android:tint="#23cc6f"-->
+    <!--    android:tint="#1b9c55"-->
+    <!--    android:tint="#3ddc84"-->
+    <!--    android:tint="#7273e2"-->
+    <!--    android:tint="#c757bc"-->
+    <!--    android:tint="#3e82dc"-->
+</resources>

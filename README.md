@@ -1,58 +1,54 @@
-# Splash Screen Feature
-Splash screen demo that used with [Splash Screen](https://developer.android.google.cn/reference/android/window/SplashScreen) API on `Android 12`.
+# Jetpack Splash Screen Demo
+![](https://z3.ax1x.com/2021/08/13/fDzSw6.png)
 
-![](https://img-blog.csdnimg.cn/img_convert/06cb7a569e6968912d6a9a369bb486a7.png)
+App demo that used with Jetpack [SplashScreen](https://developer.android.google.cn/jetpack/androidx/releases/core?hl=zh-cn#core_splashscreen_version_100_2) library which helps building app splash page easily.
 
-## :camera_flash:Screenshot
-### Complete splash screen effect
+*   Help to user **Android 12's new Splash Screen API**
+*   Support to **Android 6**
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fa147a6e37654221aad6b9c0e2dc6c15~tplv-k3u1fbpfcp-zoom-1.image#pic_center)
+## :camera_flash:Splash screen effect on Android 8 & 12
 
-### Splash screen with animated icon
-#### android icon rotate animator
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ddd239d0b1c04df18facac58f140fef6~tplv-k3u1fbpfcp-zoom-1.image#pic_center)
+### Enter effect
 
-#### android icon slide animator
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a334fb8b87104fde8b455d94087be1c0~tplv-k3u1fbpfcp-zoom-1.image#pic_center)
+<center class="half">
+    <img src="screenshots/jet-splash-enter-8.gif" width="320"/>
+    <img src="screenshots/jet-splash-enter-12.gif" width="300"/>
+</center>
 
-#### kotlin and android icon compose animator
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b7598d3b251e4e1bae551f435cdec373~tplv-k3u1fbpfcp-zoom-1.image#pic_center)
+### Keep splash longer
 
-### Splash screen exit animation by total view
+<center class="half">
+    <img src="screenshots/jet-splash-longer-8.gif" width="320"/>
+    <img src="screenshots/jet-splash-longer-12.gif" width="300"/>
+</center>
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/43a839b5840e4d23a553db2c40fdc01e~tplv-k3u1fbpfcp-zoom-1.image#pic_center)
+### Exit effect for icon
 
-### Splash screen exit animation by icon
+<center class="half">
+    <img src="screenshots/jet-splash-exit-icon-8.gif" width="320"/>
+    <img src="screenshots/jet-splash-exit-icon-12.gif" width="300"/>
+</center>
 
-![在这里插入图片描述](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c17496c976754fd795c7015c265386e8~tplv-k3u1fbpfcp-zoom-1.image#pic_center)
+### Exit effect for total view
 
+<center class="half">
+    <img src="screenshots/jet-splash-exit-total-8.gif" width="320"/>
+    <img src="screenshots/jet-splash-exit-total-12.gif" width="300"/>
+</center>
 
 ## :orange_book:　Splash Screen API
 
-###  Class & Interface
-| 类/接口                 | 作用                                                         |
-| ----------------------- | ------------------------------------------------------------ |
-| SplashScreen            | 启动画面管理接口，通过Activity#getSplashScreen取得           |
-| OnExitAnimationListener | 启动画面退出的回调接口，通过SplashScreen#setOnExitAnimationListener注册 |
-| SplashScreenView        | 启动画面包含的视图，用以定制整体或Icon的退出动画             |
+![](https://z3.ax1x.com/2021/10/01/4ToJ2j.png)
 
-### attr
 
-| attr                                  | 作用                             | 备注                                     |
-| :------------------------------------ | :------------------------------- | :--------------------------------------- |
-| splashScreenTheme                     | 指定SplashScreen相关的Style      | 指定的style有些问题比如brand图片会不显示 |
-| windowSplashScreenBackground          | 定制启动画面的背景颜色           | 未设置的话从windowBackground里读取       |
-| windowSplashScreenBrandingImage       | 自定义指定启动画面底部的品牌图标 | -                                        |
-| windowSplashScreenAnimatedIcon        | 指定Icon，支持静态或动画Drawable | -                                        |
-| windowSplashScreenAnimationDuration   | 指定动画Icon的时长               | 上限为1000ms                             |
-| windowSplashScreenIconBackgroundColor | 补充图标Icon的背景色             | -                                        |
+## :orange_book:　Reference site
+* [Jetpack SplashScreen library ](https://developer.android.google.cn/jetpack/androidx/releases/core?hl=zh-cn#core_splashscreen_version_100_2)
+* [Android 12 New Splash Screen API](https://developer.android.google.cn/about/versions/12/features/splash-screen)
+## :orange_book:　Blog detail
 
-## :orange_book:　Reference
-[New feature:Splash Screen](https://developer.android.google.cn/about/versions/12/features/splash-screen)
+*   [Jetpack新成员SplashScreen：打造全新的App启动画面](https://juejin.cn/post/6997217571208445965)
 
-## :orange_book:　My blog
-
-<https://blog.csdn.net/allisonchen>
+*   [Android 12上全新的应用启动画面，适配一下？](https://juejin.cn/post/6962706834889113614)
 
 ## :copyright: License
 ```

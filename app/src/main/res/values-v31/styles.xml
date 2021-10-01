@@ -1,18 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="JetpackSplashTheme" parent="JetpackSplashTheme.Base">
+        <!-- icon background color-->
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/newSplashIconMaskColor</item>
 
-    <style name="SplashTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-<!--        <item name="colorPrimary">@color/newSplashScreenColor</item>-->
-<!--        <item name="colorPrimaryDark">@color/newSplashScreenColor</item>-->
-        <item name="colorAccent">@color/colorAccent</item>
+        <!-- brand image-->
+        <item name="android:windowSplashScreenBrandingImage">@drawable/ic_brand_tm_normal</item>
+    </style>
 
+    <!-- animated icon -->
+<!--    <item name="windowSplashScreenAnimatedIcon">@drawable/ic_kotlin_hero_new_animated_total</item>-->
+
+    <!-- animation duration-->
+<!--    <item name="windowSplashScreenAnimationDuration">@integer/icon_animator_duration</item>-->
+
+    <!-- screen background color -->
+<!--    <item name="windowSplashScreenBackground">@color/newSplashScreenColor</item>-->
+
+
+<!--    <style name="NewSplashTheme" parent="NewSplashTheme.Base">-->
+<!--        &lt;!&ndash; screen background color &ndash;&gt;-->
+<!--        <item name="windowSplashScreenBackground">@color/newSplashScreenColor</item>-->
+
+<!--        &lt;!&ndash; animated icon &ndash;&gt;-->
+<!--        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_kotlin_hero_new_animated_total</item>-->
+
+<!--        &lt;!&ndash; animation duration&ndash;&gt;-->
+<!--        <item name="windowSplashScreenAnimationDuration">@integer/icon_animator_duration</item>-->
+
+<!--        &lt;!&ndash; icon background color&ndash;&gt;-->
+<!--        <item name="android:windowSplashScreenIconBackgroundColor">@color/newSplashIconMaskColor</item>-->
+
+<!--        &lt;!&ndash; brand image&ndash;&gt;-->
+<!--        <item name="android:windowSplashScreenBrandingImage">@drawable/ic_tm_brand_newer</item>-->
+<!--    </style>-->
+
+    <style name="SplashTheme" parent="SplashTheme.Base">
         <!-- blur -->
-<!--        <item name="android:windowBackgroundBlurRadius">14dp</item>-->
-<!--        <item name="android:windowBlurBehindEnabled">true</item>-->
-<!--        <item name="android:windowBlurBehindRadius">30dp</item>-->
+        <!--        <item name="android:windowBackgroundBlurRadius">14dp</item>-->
+        <!--        <item name="android:windowBlurBehindEnabled">true</item>-->
+        <!--        <item name="android:windowBlurBehindRadius">30dp</item>-->
 
         <!--        Splash background colorAccent-->
         <!--        <item name="android:windowSplashScreenBackground">@color/colorPrimary</item>-->
@@ -21,7 +48,7 @@
 
         <!--        Static icon-->
         <!--        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_icon_movie_adp_latest</item>-->
-<!--        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_kotlin_hero_new</item>-->
+        <!--        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_kotlin_hero_new</item>-->
 
         <!--        Mask color-->
         <!--        <item name="android:windowSplashScreenIconBackgroundColor">@color/splashIconMaskColor</item>-->
@@ -30,7 +57,7 @@
         <!--        Brand image-->
         <!--        <item name="android:windowSplashScreenBrandingImage">@drawable/ic_tm_brand</item>-->
         <!--        <item name="android:windowSplashScreenBrandingImage">@drawable/ic_tm_brand_new</item>-->
-        <item name="android:windowSplashScreenBrandingImage">@drawable/ic_tm_brand_newer</item>
+        <item name="android:windowSplashScreenBrandingImage">@drawable/ic_brand_tm_normal</item>
         <!--        <item name="android:windowSplashScreenBrandingImage">@drawable/xiaomi_brand</item>-->
         <!--        <item name="android:windowSplashScreenBrandingImage">@drawable/xiaomi_brand_small</item>-->
 
@@ -38,68 +65,11 @@
         <!--        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_icon_movie_adp_latest_animated</item>-->
 
         <!-- animated icon -->
-<!--        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_kotlin_hero_new_animated_rotate</item>-->
-<!--        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_kotlin_hero_new_animated</item>-->
+        <!--        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_kotlin_hero_new_animated_rotate</item>-->
+        <!--        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_kotlin_hero_new_animated</item>-->
         <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_kotlin_hero_new_animated_total</item>
 
         <!-- Animation duration-->
         <item name="android:windowSplashScreenAnimationDuration">@integer/icon_animator_duration</item>
-    </style>
-
-    <style name="SplashThemeWithTitle" parent="Theme.AppCompat.DayNight">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-
-        <!--        Splash background colorAccent-->
-        <!--        <item name="android:windowSplashScreenBackground">@color/colorPrimary</item>-->
-        <!--        <item name="android:windowSplashScreenBackground">@color/splashScreenColor</item>-->
-        <item name="android:windowSplashScreenBackground">@color/newSplashScreenColor</item>
-
-        <!--        Static icon-->
-        <!--        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_icon_movie_adp_latest</item>-->
-
-        <!--        Mask color-->
-        <!--        <item name="android:windowSplashScreenIconBackgroundColor">@color/splashIconMaskColor</item>-->
-        <item name="android:windowSplashScreenIconBackgroundColor">@color/newSplashIconMaskColor</item>
-
-        <!--        Brand image-->
-        <!--        <item name="android:windowSplashScreenBrandingImage">@drawable/ic_tm_brand</item>-->
-        <!--        <item name="android:windowSplashScreenBrandingImage">@drawable/ic_tm_brand_new</item>-->
-        <item name="android:windowSplashScreenBrandingImage">@drawable/ic_tm_brand_newer</item>
-        <!--        <item name="android:windowSplashScreenBrandingImage">@drawable/xiaomi_brand</item>-->
-        <!--        <item name="android:windowSplashScreenBrandingImage">@drawable/xiaomi_brand_small</item>-->
-
-        <!--        Animated icon-->
-        <!--        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_icon_movie_adp_latest_animated</item>-->
-        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_kotlin_hero_new_animated_total</item>
-        <!--        Animation duration-->
-        <item name="android:windowSplashScreenAnimationDuration">@integer/icon_animator_duration</item>
-    </style>
-
-    <!--        <item name="android:splashScreenTheme">@style/SplashScreenTheme</item>-->
-    <style name="SplashScreenTheme">
-        <!--        Static icon-->
-        <!--        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_icon_movie_adp_latest</item>-->
-        <!--        Animated icon-->
-        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_icon_movie_adp_latest_animated</item>
-
-        <!--        Animation duration-->
-        <item name="android:windowSplashScreenAnimationDuration">1000</item>
-
-        <!--        Mask color-->
-        <!--        <item name="android:windowSplashScreenIconBackgroundColor">@color/splashIconMaskColor</item>-->
-        <item name="android:windowSplashScreenIconBackgroundColor">@color/newSplashIconMaskColor</item>
-
-        <!--        Splash background colorAccent-->
-        <!--        <item name="android:windowSplashScreenBackground">@color/colorPrimary</item>-->
-        <!--        <item name="android:windowSplashScreenBackground">@color/splashScreenColor</item>-->
-        <item name="android:windowSplashScreenBackground">@color/newSplashScreenColor</item>
-
-        <!--        Brand image-->
-        <item name="android:windowSplashScreenBrandingImage">@drawable/ic_tm_brand</item>
-        <!--        <item name="android:windowSplashScreenBrandingImage">@drawable/xiaomi_brand</item>-->
-        <!--        <item name="android:windowSplashScreenBrandingImage">@drawable/xiaomi_brand_small</item>-->
     </style>
 </resources>

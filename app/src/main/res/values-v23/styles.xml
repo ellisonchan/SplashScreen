@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="JetpackSplashTheme" parent="JetpackSplashTheme.Base">
+        <item name="windowSplashScreenAnimationDuration">@integer/icon_animator_duration</item>
+        <item name="android:windowBackground">@color/newSplashScreenColor</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_kotlin_hero_new_animated_total</item>
+    </style>
+
+<!--    <style name="NewSplashTheme" parent="NewSplashTheme.Base">-->
+<!--        <item name="windowSplashScreenAnimationDuration">@integer/icon_animator_duration</item>-->
+<!--        <item name="windowSplashScreenBackground">@color/newSplashScreenColor</item>-->
+<!--        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_kotlin_hero_new_animated_total</item>-->
+<!--    </style>-->
+
+    <style name="SplashTheme" parent="SplashTheme.Base">
+        <item name="android:windowBackground">@color/newSplashIconMaskColor</item>
+        <!--<item name="android:windowSplashscreenContent">@color/newSplashIconMaskColor</item>-->
+    </style>
+</resources>

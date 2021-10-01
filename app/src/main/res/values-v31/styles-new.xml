@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SplashScreenTheme" parent="SplashScreenTheme.Base">
+        <!-- animated icon -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_kotlin_hero_new_animated_total</item>
+
+        <!-- icon background color-->
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/iconBackgroundColor</item>
+
+        <!-- brand image-->
+        <item name="android:windowSplashScreenBrandingImage">@drawable/ic_brand_tm_bold_white</item>
+    </style>
+</resources>

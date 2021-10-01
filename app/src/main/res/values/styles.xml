@@ -1,11 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Base application theme. -->
+
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
         <item name="android:windowBackground">@color/splashScreenColor</item>
+    </style>
+
+    <style name="AppThemeWithTitle" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowBackground">@color/splashScreenColor</item>
+    </style>
+
+
+    <style name="JetpackSplashTheme" parent="JetpackSplashTheme.Base">
+    </style>
+
+    <style name="JetpackSplashTheme.Base" parent="Theme.SplashScreen">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/newSplashScreenColor</item>
+
+        <!-- animated icon -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_kotlin_hero_new_animated_total</item>
+        <!-- animation duration-->
+        <item name="windowSplashScreenAnimationDuration">@integer/icon_animator_duration</item>
+        <!-- screen background color -->
+        <item name="windowSplashScreenBackground">@color/newSplashScreenColor</item>
+
+        <item name="postSplashScreenTheme">@style/SplashActivityTheme</item>
+    </style>
+
+    <style name="SplashActivityTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+<!--    <style name="NewSplashTheme" parent="NewSplashTheme.Base">-->
+<!--        <item name="android:windowBackground">@color/newSplashScreenColor</item>-->
+<!--    </style>-->
+
+    <style name="NewSplashTheme.Base" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="SplashTheme" parent="SplashTheme.Base">
+        <item name="android:windowBackground">@color/newSplashScreenColor</item>
+    </style>
+
+    <style name="SplashTheme.Base" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
     </style>
 </resources>

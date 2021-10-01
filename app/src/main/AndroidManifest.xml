@@ -12,12 +12,54 @@
         android:theme="@style/AppTheme">
 
         <!--        android:theme="@style/SplashThemeWithTitle">-->
-        <activity android:name="com.example.splash.activity.MainActivity"
+        <activity android:name="com.example.splash.activity.ImageMainActivity"
             android:theme="@style/AppThemeWithTitle"/>
 
+        <!--
         <activity android:name="com.example.splash.activity.SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+
+        <activity android:name="com.example.splash.activity.OldMainActivity"
+            android:exported="true"
+            android:label="Main Splash"
+            android:theme="@style/SplashThemeBase.WithBg">
+            <!--            android:theme="@style/SplashThemeBase.DefaultBg"-->
+            <!--            android:theme="@style/SplashThemeBase.NoBg"-->
+            <!--            android:theme="@style/SplashThemeBase.TransparentBg"-->
+            <!--            android:theme="@style/SplashThemeBase.WithBg"-->
+            <!--            android:theme="@style/SplashThemeBase.WithBg.SplashContent"-->
+
+<!--                        <intent-filter>-->
+<!--                            <action android:name="android.intent.action.MAIN" />-->
+<!--                            <category android:name="android.intent.category.LAUNCHER" />-->
+<!--                        </intent-filter>-->
+        </activity>
+
+        <activity android:name="com.example.splash.activity.CustomizeSplashActivity"
+            android:exported="true"
+            android:label="Fake Splash"
+            android:theme="@style/SplashThemeBase.FakeBg">
+<!--            android:theme="@style/SplashThemeNoTitleBase.FakeBg"-->
+
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+
+        <activity android:name="com.example.splash.activity.JetpackSplashActivity"
+            android:exported="true"
+            android:label="Jet Splash"
+            android:theme="@style/SplashScreenTheme">
+<!--            android:theme="@style/JetpackSplashTheme"-->
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

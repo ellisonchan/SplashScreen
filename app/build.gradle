@@ -5,13 +5,15 @@ apply plugin: 'kotlin-android-extensions'
 android {
     // compileSdkVersion 30
     compileSdkVersion "android-S"
+    // compileSdkVersion 30
     buildToolsVersion "30.0.2"
 
     defaultConfig {
         applicationId "com.example.splash"
         minSdkVersion 24
 //        targetSdkVersion 30
-        targetSdkVersion "S"
+//        targetSdkVersion "S"
+        targetSdkVersion 31
         versionCode 1
         versionName "1.0"
 
@@ -51,4 +53,7 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.6.0-alpha02'
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1"
     implementation 'androidx.fragment:fragment-ktx:1.2.2'
+
+    // Optional - APIs for SplashScreen, including compatibility helpers on devices prior Android 12
+    implementation "androidx.core:core-splashscreen:1.0.0-alpha01"
 }

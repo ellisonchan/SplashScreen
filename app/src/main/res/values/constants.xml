@@ -3,7 +3,7 @@
     <integer name="icon_animator_rotate_from">0</integer>
     <integer name="icon_animator_rotate_to">360</integer>
 
-    <integer name="splash_exit_total_duration">600</integer>
+    <integer name="splash_exit_total_duration">1500</integer>
     <integer name="splash_exit_icon_duration">600</integer>
 
     <integer name="icon_animator_translate_minus">-120</integer>
