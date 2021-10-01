@@ -8,32 +8,40 @@ App demo that used with Jetpack [SplashScreen](https://developer.android.google.
 
 ## :camera_flash:Splash screen effect on Android 8 & 12
 
-### Enter effect
+### 1. Enter effect
+
+
 
 <center class="half">
-    <img src="screenshots/jet-splash-enter-8.gif" width="320"/>
-    <img src="screenshots/jet-splash-enter-12.gif" width="300"/>
+    <img src="screenshots/jet-splash-enter-8.gif" width="30%"/>
+    <img src="screenshots/jet-splash-enter-12.gif" width="30%"/>
 </center>
 
-### Keep splash longer
+### 2. Keep splash effect longer
+
+
 
 <center class="half">
-    <img src="screenshots/jet-splash-longer-8.gif" width="320"/>
-    <img src="screenshots/jet-splash-longer-12.gif" width="300"/>
+    <img src="screenshots/jet-splash-longer-8.gif" width="30%"/>
+    <img src="screenshots/jet-splash-longer-12.gif" width="30%"/>
 </center>
 
-### Exit effect for icon
+### 3. Exit effect for icon
+
+
 
 <center class="half">
-    <img src="screenshots/jet-splash-exit-icon-8.gif" width="320"/>
-    <img src="screenshots/jet-splash-exit-icon-12.gif" width="300"/>
+    <img src="screenshots/jet-splash-exit-icon-8.gif" width="30%"/>
+    <img src="screenshots/jet-splash-exit-icon-12.gif" width="30%"/>
 </center>
 
-### Exit effect for total view
+### 4. Exit effect for total view
+
+
 
 <center class="half">
-    <img src="screenshots/jet-splash-exit-total-8.gif" width="320"/>
-    <img src="screenshots/jet-splash-exit-total-12.gif" width="300"/>
+    <img src="screenshots/jet-splash-exit-total-8.gif" width="30%"/>
+    <img src="screenshots/jet-splash-exit-total-12.gif" width="30%"/>
 </center>
 
 ## :orange_book:　Splash Screen API
